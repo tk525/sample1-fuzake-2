@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    nya = "にゃ"
+    nya = "私は□□□です"
     return render_template('index.html', post=nya)
 
 if __name__ == "__main__":
