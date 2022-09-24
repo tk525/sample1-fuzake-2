@@ -13,7 +13,6 @@
   </head>
   <body>
 
-    テキストをpythonで出力するように！{{ post }}
 
 
     <!-- 自己紹介導入 -->
@@ -21,15 +20,15 @@
 
       <!-- 背景 --> 
       <div class="aboutMe_background">
-          <video src="/templates/static/img/people_BW.mp4" autoplay loop muted alt="i am lazier"></video>
+          <video src="/templates/static/img/people_BW.mp4" autoplay loop muted alt="i am lazier" style="width:99%"></video>
       </div>     
 
       <!-- テキスト -->
       <div class="aboutMe_texts">
-        <p class="js_typing big-txt">I</p>
-        <p class="js_typing big-txt">AM</p>
-        <p class="js_typing big-txt txt-red">LAZIER</p>
-        <p class="js_typing mid-txt" style="background-color: rgb(0,0,0); color:#fff; padding-left: 20px;">私は面倒くさがりです</p>
+        <p class="js_typing big-txt">I AM</p>
+        <!-- <p class="js_typing big-txt">AM</p> -->
+        <p class="js_typing big-txt txt-red">{{ post0 }}</p>
+        <p class="js_typing mid-txt" style="background-color: rgb(0,0,0); color:#fff; padding-left: 20px;">{{ post1 }}</p>
       </div>
 
     </div>
@@ -39,7 +38,13 @@
     <div class="aboutMe_more">
 
       <div >
-        <p class="txt">少し私の経歴の話をしましょう。あれは今から28年前、阪神淡路大震災が起こる約7ヶ月前に、神戸市を初期セーブポイントとして、ステータスは末っ子で誕生しました。</p>
+        <p class="txt">{{ aboutMe0 }}</p>
+        <p class="txt">{{ aboutMe1 }}</p>
+        <p class="txt">{{ aboutMe2 }}</p>
+        <p class="txt">{{ aboutMe3 }}</p>
+        <p class="txt">{{ aboutMe4 }}</p>
+        <p class="txt">{{ aboutMe5 }}</p>
+        <p class="txt">{{ aboutMe6 }}</p>
       </div>
 
     </div>  
@@ -53,7 +58,7 @@
       <img src="/templates/static/img/LikeAndHate.jpg" class="img-main" alt="what difference is both the like and unlike">
 
       <!-- テキスト -->
-      <div class="LikeHate_texts">
+      <div class="LikeHate_texts" style="margin-top: -7vh;">
         <p class="js_typing min-txt">Gillar och ogillar.</p>
       </div>
     
@@ -64,7 +69,15 @@
     <div class="LikeHate_more">
       
       <div >
-        <p class="txt">スキスキスー</p>
+        <p class="txt">{{ LikeHate0 }}</p>
+        <p class="txt">{{ LikeHate1 }}</p>
+        <p class="txt">{{ LikeHate2 }}</p>
+        <p class="txt">{{ LikeHate3 }}</p>
+        <p class="txt">{{ LikeHate4 }}</p>
+        <p class="txt">{{ LikeHate5 }}</p>
+        <p class="txt">{{ LikeHate6 }}</p>
+        <p class="txt">{{ LikeHate7 }}</p>
+        <p class="txt">{{ LikeHate8 }}</p>
       </div>
 
     </div>  
@@ -77,8 +90,8 @@
     <div class="FreeTime_more">
       
       <div >
-        <p class="txt txt-WH">自由時間</p>
-        <p class="js_typing min-txt txt-WH">空闲时间</p>
+        <p class="mid-txt txt-WH">自由時間</p>
+        <p class="js_typing txt txt-WH">空闲时间</p>
       </div>
 
     </div>  
@@ -86,22 +99,26 @@
 
 
     <!-- 自由時間紹介 --> 
-    <div class="FreeTime_background">
-      <div class="FreeTime_more">
+    <!-- <div class="FreeTime_background"> -->
+      <!-- <div class="FreeTime_more"> -->
       <div class="container bgc-bk">
 
         <!-- 左 画像 -->
     <div class="box cell-l bgc-bk">
-      <img src="/templates/static/img/FreeTime.jpg" style="height: 800px;" alt="poor has no money">
+      <img src="/templates/static/img/FreeTime.jpg" style="height: 800px; " alt="poor has no money">
     </div>
 
       <!-- 右 テキスト -->
     <div class="txt-WH box cell-r bgc-bk">
-      <p class="txt">フワフワフー</p>
-      <p class="txt">フワフワフー</p>
+      <p class="txt">{{ FreeTime0 }}</p>
+      <p class="txt">{{ FreeTime1 }}</p>
+      <p class="txt">{{ FreeTime2 }}</p>
+      <p class="txt">{{ FreeTime3 }}</p>
+      <p class="txt">{{ FreeTime4 }}</p>
+      <p class="txt">{{ FreeTime5 }}</p>
     </div>
     
-    </div>
+    <!-- </div> -->
     </div>
     
 
@@ -113,7 +130,7 @@
       <img src="/templates/static/img/News.png" class="img-main" alt="old people does not accept new info">
 
       <!-- テキスト -->
-      <div class="News_texts">
+      <div class="News_texts" style="margin-top: -5vh;">
         <p class="js_typing min-txt txt-red">живое ископаемое</p>
       </div>
     
@@ -124,7 +141,13 @@
     <div class="News_more">
       
       <div >
-        <p class="txt">こんなキモチー</p>
+        <p class="txt">{{ News0 }}</p>
+        <p class="txt">{{ News1 }}</p>
+        <p class="txt">{{ News2 }}</p>
+        <p class="txt">{{ News3 }}</p>
+        <p class="txt">{{ News4 }}</p>
+        <p class="txt">{{ News5 }}</p>
+        <p class="txt">{{ News6 }}</p>
       </div>
 
     </div> 
@@ -136,8 +159,8 @@
     <!-- 背景 -->
       
       <div class="portfolio_more" style="margin-top: 150px; padding-bottom: 150px;">
-        <p class="js_typing min-txt txt-BK">手本帖</p>
-        <p class="txt txt-BK">ポートフォリオ</p>
+        <p class="js_typing txt txt-BK">手本帖</p>
+        <p class="txt mid-txt txt-BK">ポートフォリオ</p>
       </div>
 
 
@@ -147,8 +170,10 @@
 
       <!-- 右 画像 -->
       <div class="txt-BK box cell-txt">
-        <p class="txt">メロメロディー</p>
-        <p class="txt">メロメロディー</p>
+        <p class="txt">{{ portf0 }}</p>
+        <p class="txt"><a href="https://sample3-20220503.herokuapp.com/">{{ portf1 }}</a></p>
+        <p class="txt">{{ portf2 }}</p>
+        <p class="txt">{{ portf3 }}</p>
       </div>
   
 
@@ -166,14 +191,41 @@
 
     <!-- 背景 -->
     <div class="SWExperience_background">
-      <img src="/templates/static/img/SWexperience.jpg" class="img-main" alt="it has different face than others">
+      <video src="/templates/static/img/black_cat_minfilesize_BW.mp4" autoplay loop muted alt="it has different face than others"></video>
+
+
+      <!-- テキスト -->
+      <div class="News_texts" style="margin-top: -25vh;">
+        <p class="js_typing min-txt txt-dgray">使用経験のある</p>
+        <p class="js_typing min-txt txt-WH">使用ケイケンのある</p>
+        <p class="js_typing min-txt txt-red">シヨウケイケンノアル</p>
+      </div>
     </div>
 
 
     <!-- 使用経験SW紹介 --> 
     <div class="SWExperience_more">
       <div >
-        <p class="js_typing txt txt-WH">夢だけどー</p>
+        <p class="js_typing txt txt-WH">{{ SFex0 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex1 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex2 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex3 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex4 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex5 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex6 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex7 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex8 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex9 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex10 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex11 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex12 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex13 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex14 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex15 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex16 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex17 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex18 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex19 }}</p>
       </div>
     </div> 
 
@@ -187,8 +239,8 @@
 
       <!-- テキスト -->
       <div class="certifications_texts">
-        <p class="js_typing min-txt bgc-red">
-          사람은 잊혀지기 때문에 살아갈 수 있다</p>
+        <p class="js_typing min-txt txt-red">
+          ★★★</p>
       </div>
 
     </div>
@@ -197,7 +249,20 @@
     <!-- 保有資格紹介 --> 
     <div class="certifications_more">
       <div >
-        <p class="txt txt-WH">夢じゃないー</p>
+        <p class="txt txt-WH">{{ certifi0 }}</p>
+        <p class="txt txt-WH">{{ certifi1 }}</p>
+        <p class="txt txt-WH">{{ certifi2 }}</p>
+        <p class="txt txt-WH">{{ certifi3 }}</p>
+        <p class="txt txt-WH">{{ certifi4 }}</p>
+        <p class="txt txt-WH">{{ certifi5 }}</p>
+        <p class="txt txt-WH">{{ certifi6 }}</p>
+        <p class="txt txt-WH">{{ certifi7 }}</p>
+        <p class="txt txt-WH">{{ certifi8 }}</p>
+        <p class="txt txt-WH">{{ certifi9 }}</p>
+        <p class="txt txt-WH">{{ certifi11 }}</p>
+        <p class="txt txt-WH">{{ certifi12 }}</p>
+        <p class="txt txt-WH">{{ certifi13 }}</p>
+        <p class="txt txt-WH">{{ certifi14 }}</p>
       </div>
     </div> 
 
