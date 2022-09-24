@@ -1,11 +1,18 @@
-# click==8.0.4
-dataclasses==0.6
+async-timeout==4.0.2
+click==8.0.4
+dataclasses==0.8
+Deprecated==1.2.13
 Flask==2.0.3
 gunicorn==20.1.0
 importlib-metadata==4.8.3
 itsdangerous==2.0.1
 Jinja2==3.0.3
 MarkupSafe==2.0.1
+packaging==21.3
+pyparsing==3.0.9
+redis==4.3.4
+rq==1.11.0
 typing_extensions==4.1.1
 Werkzeug==2.0.3
+wrapt==1.14.1
 zipp==3.6.0
