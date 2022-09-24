@@ -1,0 +1,282 @@
+/* テキスト設定 */
+.txt {
+    font-size: 20px;
+}
+.big-txt{
+    font-size: 5vw;
+}
+.mid-txt{
+    font-size: 4vw;
+}
+.min-txt {
+    font-size: 2vw;
+}
+
+
+
+
+/* 背景設定 */
+.bgi{
+    position: fixed;
+    /* right: 0; */
+    /* bottom: 0; */
+    top: 0;
+    /* left: 0;  */
+    /* width: auto; */
+    /* height: 300px; */
+    z-index: -100;
+    /* background-size: cover; */
+}
+.img-main{    
+    width: 100%;
+}
+.bgc-gray{
+    background-color: rgb(169, 169, 169);
+}
+.bgc-bk{
+    background-color:rgb(0, 0, 0);
+}
+.bgc-red{
+    background-color:rgb(112, 0, 0);
+}
+
+
+
+.blanks{
+    padding-top: 100px;
+}
+
+.txt-red{
+    color: rgb(116, 0, 0);
+}
+.txt-WH {
+    color: rgb(255, 255, 255);
+}
+.txt-BK {
+    color: rgb(0, 0, 0);
+}
+.txt-dgray {
+    color: rgb(41, 41, 41);
+}
+
+
+
+video{
+    width:100%;
+}
+
+/* AboutMe 画像とテキスト重ね */
+.aboutMe_background{
+    position: relative;
+
+}
+.aboutMe_texts{
+    /* absolute上下中央よせ https://arts-factory.net/position/#toc4*/
+    position: absolute;
+    height: 90vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/* 導入と詳細せっと！ */
+.aboutMe{
+    background-color: rgb(169, 169, 169); /*とりあえず置いてるだけ*/
+}
+.aboutMe_more{
+    background-color:rgb(169, 169, 169);
+
+    margin-top: -20px; /* なぜか余白が発生するので埋没*/
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+/* LikeHate 画像とテキスト重ね */
+.LikeHate_background{
+    position: relative;
+
+}
+.LikeHate_texts{
+    /* absolute上下中央よせ https://arts-factory.net/position/#toc4*/
+    position: absolute;
+    /* top: 17vh; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    margin-top: 200px;
+}
+.LikeHate_more{
+    background-color:rgb(255, 255, 255);
+
+    margin-top: -20px; /* なぜか余白が発生するので埋没*/
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+/* FreeTime導入 */
+.FreeTime_more{
+    background-color:rgb(0, 0, 0);
+
+    margin-top: -20px; /* なぜか余白が発生するので埋没*/
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.FreeTime-img{
+    height: 200px;
+}
+.container{
+    text-align:  center; /* 要素を中央寄せ https://www.modis.co.jp/candidate/insight/column_129#:~:text=%E4%B8%AD%E5%A4%AE%E5%AF%84%E3%81%9B%E3%81%97%E3%81%9F%E3%81%84%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E8%A6%81%E7%B4%A0,%E4%B8%AD%E5%A4%AE%E5%AF%84%E3%81%9B%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82 */
+
+    display: table;
+    width: 100%;
+  }
+
+
+  .cell-l{
+    display: inline-block;
+
+    vertical-align: top;
+    text-align: left;
+    /* width: 1200px; */
+    width: 80%;
+
+  }
+
+  .cell-r{
+    display: inline-block; 
+
+    vertical-align: top;
+    text-align: right;
+
+  }
+
+
+
+
+
+
+/* News 画像とテキスト重ね */
+.News_background{
+    position: relative;
+
+}
+.News_texts{
+    /* absolute上下中央よせ https://arts-factory.net/position/#toc4*/
+    position: absolute;
+    /* top: -10%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    margin-top: 200px;
+}
+.News_more{
+    background-color:rgb(169, 169, 169);
+
+    margin-top: -20px; /* なぜか余白が発生するので埋没*/
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+/* Portfoli導入 */
+.portfoli_more{
+    background-color:rgb(255, 255, 255);
+    margin-top: 150px;
+    padding-bottom: 150px;
+
+    margin-top: -20px; /* なぜか余白が発生するので埋没*/
+
+}
+
+.container{
+    text-align:  center; 
+
+    display: table;
+    width: 100%;
+
+    padding-bottom: 100px;
+  }
+
+  .cell-img{
+    display: inline-block;
+
+    vertical-align: top;
+    text-align: right;
+    width: 80%;
+  }
+
+  .cell-txt{
+    display: inline-block; 
+
+    vertical-align: top;
+    text-align: left;
+  }
+
+
+
+/* SWEx 画像とテキスト重ね */
+.SWExperience_background{
+    position: relative;
+
+}
+.SWExperience_texts{
+    /* absolute上下中央よせ https://arts-factory.net/position/#toc4*/
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    margin-top: 200px;
+}
+.SWExperience_more{
+    background-color:rgb(0, 0, 0);
+
+    margin-top: -20px; /* なぜか余白が発生するので埋没*/
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+/* Certifi 画像とテキスト重ね */
+.certifications_background{
+    position: relative;
+
+}
+.certifications_texts{
+    /* absolute上下中央よせ https://arts-factory.net/position/#toc4*/
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    margin-top: 200px;
+}
+.certifications_more{
+    background-color:rgb(169, 169, 169);
+
+    margin-top: -20px; /* なぜか余白が発生するので埋没*/
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
