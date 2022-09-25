@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect
-app = Flask(__name__)
+
+# app = Flask(__name__)
+app = Flask(__name__, static_folder='./templates/static/img') 
 
 @app.route('/')
 def hello():
@@ -7,7 +9,9 @@ def hello():
     # 導入
     post0 = "LAZIER"
     post1 = "私は面倒くさがりです"
-
+    # post_img = "https://github.com/tk525/sample1-fuzake-2/blob/29308d4fd6a82065963083561a5b7d5c2604b1bb/templates/static/img/people_BW.mp4"
+    post_img = "img/people_BW.mp4"
+    # post_img = "ファ？"
 
     # 自己紹介
     aboutMe0 = "少し私の経歴の話をしましょう。あれは今から28年前、震災が起こる約7ヶ月前に、関西を初期セーブポイントとして、ステータスは末っ子で誕生しました。"
@@ -98,7 +102,8 @@ def hello():
     certifi13="2010年11月 珠算・電卓実務検定 ３級"
     certifi14="2010年9月 全商 情報処理検定 ３級"
 
-    return render_template('index.html',post0=post0, post1=post1,
+    return render_template('index.html',
+        post0=post0, post1=post1, post_img=post_img,
         aboutMe0=aboutMe0, aboutMe1=aboutMe1, aboutMe2=aboutMe2, 
         aboutMe3=aboutMe3, aboutMe4=aboutMe4, aboutMe5=aboutMe5, aboutMe6=aboutMe6,
         LikeHate0=LikeHate0, LikeHate1=LikeHate1, LikeHate2=LikeHate2, LikeHate3=LikeHate3, LikeHate4=LikeHate4, LikeHate5=LikeHate5, LikeHate6=LikeHate6, LikeHate7=LikeHate7,
