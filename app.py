@@ -1,14 +1,19 @@
-from flask import Flask, render_template, request, redirect
+import os
+from flask import Flask, render_template, request, redirect, url_for
 
 # app = Flask(__name__)
-app = Flask(__name__, static_folder='./templates/static/img') 
+app = Flask(__name__, static_folder='./templates/static') 
+
+
 
 @app.route('/')
 def hello():
+    css = "static/style.css"
+    js = "static/main.js"
 
     # 導入
     # post_img = "https://github.com/tk525/sample1-fuzake-2/blob/29308d4fd6a82065963083561a5b7d5c2604b1bb/templates/static/img/people_BW.mp4"
-    post_img = "img/people_BW.mp4"
+    post_img = "static/img/people_BW.mp4"
     post0 = "LAZIER"
     post1 = "私は面倒くさがりです"
 
@@ -23,7 +28,7 @@ def hello():
 
 
     # 好きと嫌い
-    LikeHate_img="img/LikeAndHate.jpg"
+    LikeHate_img="static/img/LikeAndHate.jpg"
     LikeHate0="好きな物は、たまご料理、挑戦やリベンジ、コーディング、海外"
     LikeHate1="挑戦は、留学中、国内のインターネットが使用不可、地図は未所持という状態になり、セーブポイント(寮)まで数十kmありました。"
     LikeHate2="残り数時間で帰還出来なければ野宿を覚悟し、野生の勘と進んだ方向を頼りに進んだ結果、帰還出来ました。"
@@ -36,7 +41,7 @@ def hello():
 
 
     # 自由時間
-    FreeTime_img="img/FreeTime.jpg"
+    FreeTime_img="static/img/FreeTime.jpg"
     FreeTime0="休日・平日の余暇時間"
     FreeTime1="出退勤時の移動時間・休憩中は、弊社の対応などのタスクがなければ、英語と開発中のアプリケーション改善方法の考案及び模索を行っています。"
     FreeTime2="具体的には、Pythonで簡易IoTアプリやExcelファイル作成アプリの開発・ラズベリーパイでミニPCを作成・Androidのアプリを完全に終了させる簡易アプリ作成など行っています。"
@@ -47,7 +52,7 @@ def hello():
 
 
     # 興味のあるニュース
-    News_img="img/News.png"
+    News_img="static/img/News.png"
     News0="興味があるニュース"
     News1="Amazonが無人機による配送・販売を行なっている事です。"
     News2="2022年6月 アメリカのロックフォードにテスト導入されますが、この街は小さく、畜産や農業をしている住民が多いので地域住民からは歓迎されておらず、秘密裏に計画実行されたので6月に知らされたとの記事を見ました。"
@@ -58,7 +63,7 @@ def hello():
 
 
     # ポートフォリオ
-    portf_img="img/portfolio.jpg"
+    portf_img="static/img/portfolio.jpg"
     portf0="ポートフォリオ"
     portf1="鬱対策アプリ"
     portf2="入力された悩みから、sklearnのアルゴリズムを使用し、段階的に解決方法を提案します。"
@@ -66,7 +71,7 @@ def hello():
 
 
     # 使用経験SW
-    SFex_img="img/SFex.mp4"
+    SFex_img="static/img/SFex.mp4"
     SFex0="使用経験のあるソフトウェア・フレームワーク等"
     SFex1="使用経験のあるソフトウェア・フレームワーク・メソッドと、言語の学習履歴を記載しました。"
     SFex2="Python"
@@ -90,7 +95,7 @@ def hello():
 
 
     # 保有資格
-    certifi_img="img/certifications.jpg"
+    certifi_img="static/img/certifications.jpg"
     certifi0="保有資格"
     certifi1="2021年4月 TOEIC公開テスト スコア655取得"
     certifi2="2018年6月 日本商工会議所及び各地商工会議所主催 日商簿記 ３級"
@@ -108,6 +113,8 @@ def hello():
     certifi14="2010年9月 全商 情報処理検定 ３級"
 
     return render_template('index.html',
+        css=css, js=js,
+
         post0=post0, post1=post1, post_img=post_img,
 
         aboutMe0=aboutMe0, aboutMe1=aboutMe1, aboutMe2=aboutMe2, 

@@ -6,6 +6,11 @@
     <title>Sample1</title>
 
     <link rel="stylesheet" href="https://github.com/tk525/sample1-fuzake-2/blob/29308d4fd6a82065963083561a5b7d5c2604b1bb/templates/assets/style.css">
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ css }}">
+
+
+
     <!-- <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-10/css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-10/css/8-10.css">
   </head>
@@ -189,7 +194,7 @@
 
     <!-- 背景 -->
     <div class="SWExperience_background">
-      <video src="SFex_img" autoplay loop muted alt="it has different face than others"></video>
+      <video src="{{ SFex_img }}" autoplay loop muted alt="it has different face than others"></video>
 
 
       <!-- テキスト -->
@@ -265,7 +270,7 @@
     </div> 
 
 
-      <script src="https://github.com/tk525/sample1-fuzake-2/blob/29308d4fd6a82065963083561a5b7d5c2604b1bb/templates/assets/main.js"></script>
+      <script src="{{ js }}"></script>
 
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

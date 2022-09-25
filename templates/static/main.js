@@ -1,3 +1,11 @@
+// エラーログ非表示
+// エラーにあったhtmlの<script>を削除したらアニメーションが動かないので
+// https://www.kaasan.info/archives/1610
+function TigilError() {
+	return true;
+}
+window.onerror = TigilError;
+
 
 // テキストランダム変換 https://coco-factory.jp/ugokuweb/move02/8-6/
 var arr = []
