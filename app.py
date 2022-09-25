@@ -7,11 +7,10 @@ app = Flask(__name__, static_folder='./templates/static/img')
 def hello():
 
     # 導入
-    post0 = "LAZIER"
-    post1 = "私は面倒くさがりです"
     # post_img = "https://github.com/tk525/sample1-fuzake-2/blob/29308d4fd6a82065963083561a5b7d5c2604b1bb/templates/static/img/people_BW.mp4"
     post_img = "img/people_BW.mp4"
-    # post_img = "ファ？"
+    post0 = "LAZIER"
+    post1 = "私は面倒くさがりです"
 
     # 自己紹介
     aboutMe0 = "少し私の経歴の話をしましょう。あれは今から28年前、震災が起こる約7ヶ月前に、関西を初期セーブポイントとして、ステータスは末っ子で誕生しました。"
@@ -24,6 +23,7 @@ def hello():
 
 
     # 好きと嫌い
+    LikeHate_img="img/LikeAndHate.jpg"
     LikeHate0="好きな物は、たまご料理、挑戦やリベンジ、コーディング、海外"
     LikeHate1="挑戦は、留学中、国内のインターネットが使用不可、地図は未所持という状態になり、セーブポイント(寮)まで数十kmありました。"
     LikeHate2="残り数時間で帰還出来なければ野宿を覚悟し、野生の勘と進んだ方向を頼りに進んだ結果、帰還出来ました。"
@@ -36,6 +36,7 @@ def hello():
 
 
     # 自由時間
+    FreeTime_img="img/FreeTime.jpg"
     FreeTime0="休日・平日の余暇時間"
     FreeTime1="出退勤時の移動時間・休憩中は、弊社の対応などのタスクがなければ、英語と開発中のアプリケーション改善方法の考案及び模索を行っています。"
     FreeTime2="具体的には、Pythonで簡易IoTアプリやExcelファイル作成アプリの開発・ラズベリーパイでミニPCを作成・Androidのアプリを完全に終了させる簡易アプリ作成など行っています。"
@@ -46,6 +47,7 @@ def hello():
 
 
     # 興味のあるニュース
+    News_img="img/News.png"
     News0="興味があるニュース"
     News1="Amazonが無人機による配送・販売を行なっている事です。"
     News2="2022年6月 アメリカのロックフォードにテスト導入されますが、この街は小さく、畜産や農業をしている住民が多いので地域住民からは歓迎されておらず、秘密裏に計画実行されたので6月に知らされたとの記事を見ました。"
@@ -56,6 +58,7 @@ def hello():
 
 
     # ポートフォリオ
+    portf_img="img/portfolio.jpg"
     portf0="ポートフォリオ"
     portf1="鬱対策アプリ"
     portf2="入力された悩みから、sklearnのアルゴリズムを使用し、段階的に解決方法を提案します。"
@@ -63,6 +66,7 @@ def hello():
 
 
     # 使用経験SW
+    SFex_img="img/SFex.mp4"
     SFex0="使用経験のあるソフトウェア・フレームワーク等"
     SFex1="使用経験のあるソフトウェア・フレームワーク・メソッドと、言語の学習履歴を記載しました。"
     SFex2="Python"
@@ -86,6 +90,7 @@ def hello():
 
 
     # 保有資格
+    certifi_img="img/certifications.jpg"
     certifi0="保有資格"
     certifi1="2021年4月 TOEIC公開テスト スコア655取得"
     certifi2="2018年6月 日本商工会議所及び各地商工会議所主催 日商簿記 ３級"
@@ -104,26 +109,26 @@ def hello():
 
     return render_template('index.html',
         post0=post0, post1=post1, post_img=post_img,
+
         aboutMe0=aboutMe0, aboutMe1=aboutMe1, aboutMe2=aboutMe2, 
         aboutMe3=aboutMe3, aboutMe4=aboutMe4, aboutMe5=aboutMe5, aboutMe6=aboutMe6,
-        LikeHate0=LikeHate0, LikeHate1=LikeHate1, LikeHate2=LikeHate2, LikeHate3=LikeHate3, LikeHate4=LikeHate4, LikeHate5=LikeHate5, LikeHate6=LikeHate6, LikeHate7=LikeHate7,
-        LikeHate8=LikeHate8, 
+        LikeHate0=LikeHate0, LikeHate1=LikeHate1, LikeHate2=LikeHate2, LikeHate3=LikeHate3, LikeHate4=LikeHate4, LikeHate5=LikeHate5, LikeHate6=LikeHate6, LikeHate7=LikeHate7, LikeHate8=LikeHate8, LikeHate_img=LikeHate_img, 
+
         FreeTime0=FreeTime0, FreeTime1=FreeTime1, FreeTime2=FreeTime2, FreeTime3=FreeTime3,
-        FreeTime4=FreeTime4, FreeTime5=FreeTime5,
+        FreeTime4=FreeTime4, FreeTime5=FreeTime5, FreeTime_img=FreeTime_img,
+
         News0=News0, News1=News1, News2=News2, News3=News3,
-        News4=News4, News5=News5, News6=News6,
-        portf0=portf0, portf1=portf1, portf2=portf2, portf3=portf3,
-        SFex0=SFex0, SFex1=SFex1, SFex2=SFex2, SFex3=SFex3, SFex4=SFex4, SFex5=SFex5, SFex6=SFex6, SFex7=SFex7, SFex8=SFex8, SFex9=SFex9,
-        SFex10=SFex10, SFex11=SFex11, SFex12=SFex12, SFex13=SFex13, SFex14=SFex14,
-        SFex15=SFex15, SFex16=SFex16, SFex17=SFex17, SFex18=SFex18, SFex19=SFex19,
+        News4=News4, News5=News5, News6=News6, News_img=News_img,
+
+        portf0=portf0, portf1=portf1, portf2=portf2, portf3=portf3, portf_img=portf_img,
+
+        SFex0=SFex0, SFex1=SFex1, SFex2=SFex2, SFex3=SFex3, SFex4=SFex4, SFex5=SFex5, SFex6=SFex6, SFex7=SFex7, SFex8=SFex8, SFex9=SFex9, SFex10=SFex10, SFex11=SFex11, SFex12=SFex12, SFex13=SFex13, SFex14=SFex14, SFex15=SFex15, SFex16=SFex16, SFex17=SFex17, SFex18=SFex18, SFex19=SFex19, SFex_img=SFex_img,
+
         certifi0=certifi0, certifi1=certifi1, certifi2=certifi2, certifi3=certifi3,
         certifi4=certifi4, certifi5=certifi5, certifi6=certifi6, certifi7=certifi7,
         certifi8=certifi8, certifi9=certifi9, certifi10=certifi10,
         certifi11=certifi11, certifi12=certifi12, certifi13=certifi13,
-        certifi14=certifi14
-        
-        
-        
+        certifi14=certifi14, certifi_img=certifi_img,
         
         )
 
