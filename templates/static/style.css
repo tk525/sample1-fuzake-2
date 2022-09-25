@@ -12,6 +12,23 @@
     font-size: 2vw;
 }
 
+/* テキストリンク */
+a {
+    color:rgb(158, 0, 0);
+    text-decoration:none; 
+}
+
+/* テキスト寄せ */
+.txt-width{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+.txt-width-withImage{
+    width: 40vw;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 
 
@@ -43,7 +60,7 @@
 
 
 .blanks{
-    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .txt-red{
@@ -149,7 +166,7 @@ video{
     vertical-align: top;
     text-align: left;
     /* width: 1200px; */
-    width: 80%;
+    /* width: 80%; */
 
   }
 
@@ -217,7 +234,7 @@ video{
 
     vertical-align: top;
     text-align: right;
-    width: 80%;
+    /* width: 80%; */
   }
 
   .cell-txt{
@@ -279,4 +296,36 @@ video{
 
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+
+
+
+
+/* タイピング */
+p{
+	text-align: center;
+	margin: 20px 0;
+	font-size: 1.5rem;
+	letter-spacing: .5em;
+    word-break : break-all;
+}
+
+.TextTyping {
+	text-align: center;
+}
+
+.TextTyping span {
+	display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+ 	content: "|";
+	animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime{
+	from{opacity:0}
+	to{opacity:1}
 }

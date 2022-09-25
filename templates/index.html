@@ -12,7 +12,7 @@
 
 
     <!-- <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-10/css/reset.css"> -->
-    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-10/css/8-10.css">
+
   </head>
   <body>
 
@@ -28,10 +28,10 @@
 
       <!-- テキスト -->
       <div class="aboutMe_texts">
-        <p class="js_typing big-txt">I AM</p>
+        <p class="txt js_typing big-txt">I AM</p>
         <!-- <p class="js_typing big-txt">AM</p> -->
-        <p class="js_typing big-txt txt-red">{{ post0 }}</p>
-        <p class="js_typing mid-txt" style="background-color: rgb(0,0,0); color:#fff; padding-left: 20px;">{{ post1 }}</p>
+        <p class="txt js_typing big-txt txt-red">{{ post0 }}</p>
+        <p class="txt js_typing mid-txt" style="background-color: rgb(0,0,0); color:#fff; padding-left: 20px;">{{ post1 }}</p>
       </div>
 
     </div>
@@ -40,13 +40,17 @@
     <!-- 自己紹介紹介 --> 
     <div class="aboutMe_more">
 
-      <div >
+      <div class="txt-width" style="text-align:center;">
         <p class="txt">{{ aboutMe0 }}</p>
+        <p class="blanks"></p>
         <p class="txt">{{ aboutMe1 }}</p>
         <p class="txt">{{ aboutMe2 }}</p>
+        <p class="blanks"></p>
         <p class="txt">{{ aboutMe3 }}</p>
         <p class="txt">{{ aboutMe4 }}</p>
+        <p class="blanks"></p>
         <p class="txt">{{ aboutMe5 }}</p>
+        <p class="blanks"></p>
         <p class="txt">{{ aboutMe6 }}</p>
       </div>
 
@@ -71,14 +75,16 @@
     <!-- 好きと嫌い紹介 --> 
     <div class="LikeHate_more">
       
-      <div >
+      <div class="txt-width">
         <p class="txt">{{ LikeHate0 }}</p>
         <p class="txt">{{ LikeHate1 }}</p>
         <p class="txt">{{ LikeHate2 }}</p>
         <p class="txt">{{ LikeHate3 }}</p>
         <p class="txt">{{ LikeHate4 }}</p>
+        <p class="blanks"></p>
         <p class="txt">{{ LikeHate5 }}</p>
         <p class="txt">{{ LikeHate6 }}</p>
+        <p class="blanks"></p>
         <p class="txt">{{ LikeHate7 }}</p>
         <p class="txt">{{ LikeHate8 }}</p>
       </div>
@@ -112,12 +118,14 @@
     </div>
 
       <!-- 右 テキスト -->
-    <div class="txt-WH box cell-r bgc-bk">
+    <div class="txt-width-withImage txt-WH box cell-r bgc-bk">
       <p class="txt">{{ FreeTime0 }}</p>
       <p class="txt">{{ FreeTime1 }}</p>
       <p class="txt">{{ FreeTime2 }}</p>
       <p class="txt">{{ FreeTime3 }}</p>
+      <p class="blanks"></p>
       <p class="txt">{{ FreeTime4 }}</p>
+      <p class="blanks"></p>
       <p class="txt">{{ FreeTime5 }}</p>
     </div>
     
@@ -143,13 +151,15 @@
     <!-- 好きと嫌い紹介 --> 
     <div class="News_more">
       
-      <div >
+      <div class="txt-width">
         <p class="txt">{{ News0 }}</p>
         <p class="txt">{{ News1 }}</p>
         <p class="txt">{{ News2 }}</p>
         <p class="txt">{{ News3 }}</p>
+        <p class="blanks"></p>
         <p class="txt">{{ News4 }}</p>
         <p class="txt">{{ News5 }}</p>
+        <p class="blanks"></p>
         <p class="txt">{{ News6 }}</p>
       </div>
 
@@ -172,9 +182,10 @@
       <div class="container bgc-wh">
 
       <!-- 右 画像 -->
-      <div class="txt-BK box cell-txt">
+      <div class="txt-width-withImage txt-BK box cell-txt">
         <p class="txt">{{ portf0 }}</p>
-        <p class="txt"><a href="https://sample3-20220503.herokuapp.com/">{{ portf1 }}</a></p>
+        <p class="txt">
+          <a href="https://sample3-20220503.herokuapp.com/">{{ portf1 }}</a></p>
         <p class="txt">{{ portf2 }}</p>
         <p class="txt">{{ portf3 }}</p>
       </div>
@@ -208,27 +219,37 @@
 
     <!-- 使用経験SW紹介 --> 
     <div class="SWExperience_more">
-      <div >
+      <div class="txt-width">
         <p class="js_typing txt txt-WH">{{ SFex0 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex1 }}</p>
+        <!-- <p class="js_typing txt txt-WH">{{ SFex1 }}</p> -->
+        <p class="blanks"></p>
         <p class="js_typing txt txt-WH">{{ SFex2 }}</p>
         <p class="js_typing txt txt-WH">{{ SFex3 }}</p>
+        <p class="blanks"></p>
         <p class="js_typing txt txt-WH">{{ SFex4 }}</p>
         <p class="js_typing txt txt-WH">{{ SFex5 }}</p>
+        <p class="blanks"></p>
+        <p class="js_typing txt txt-WH">{{ SFex18 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex19 }}</p>
+        <p class="blanks"></p>
+        <p class="blanks txt-WH">- - - - - - - - - - -</p>
+        <p class="js_typing txt txt-WH">{{ SFex10 }}</p>
+        <p class="blanks"></p>
+        <p class="js_typing txt txt-WH">{{ SFex11 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex12 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex13 }}</p>
+        <p class="blanks"></p>
+        <p class="js_typing txt txt-WH">{{ SFex14 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex15 }}</p>
+        <p class="blanks"></p>
+        <p class="js_typing txt txt-WH">{{ SFex16 }}</p>
+        <p class="js_typing txt txt-WH">{{ SFex17 }}</p>
+        <p class="blanks"></p>
         <p class="js_typing txt txt-WH">{{ SFex6 }}</p>
         <p class="js_typing txt txt-WH">{{ SFex7 }}</p>
         <p class="js_typing txt txt-WH">{{ SFex8 }}</p>
         <p class="js_typing txt txt-WH">{{ SFex9 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex10 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex11 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex12 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex13 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex14 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex15 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex16 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex17 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex18 }}</p>
-        <p class="js_typing txt txt-WH">{{ SFex19 }}</p>
+
       </div>
     </div> 
 
@@ -251,19 +272,25 @@
 
     <!-- 保有資格紹介 --> 
     <div class="certifications_more">
-      <div >
+      <div class="txt-width">
         <p class="txt txt-WH">{{ certifi0 }}</p>
+        <p class="blanks"></p>
         <p class="txt txt-WH">{{ certifi1 }}</p>
+        <p class="blanks"></p>
         <p class="txt txt-WH">{{ certifi2 }}</p>
+        <p class="blanks"></p>
         <p class="txt txt-WH">{{ certifi3 }}</p>
+        <p class="blanks"></p>
         <p class="txt txt-WH">{{ certifi4 }}</p>
         <p class="txt txt-WH">{{ certifi5 }}</p>
         <p class="txt txt-WH">{{ certifi6 }}</p>
         <p class="txt txt-WH">{{ certifi7 }}</p>
         <p class="txt txt-WH">{{ certifi8 }}</p>
+        <p class="blanks"></p>
         <p class="txt txt-WH">{{ certifi9 }}</p>
         <p class="txt txt-WH">{{ certifi11 }}</p>
         <p class="txt txt-WH">{{ certifi12 }}</p>
+        <p class="blanks"></p>
         <p class="txt txt-WH">{{ certifi13 }}</p>
         <p class="txt txt-WH">{{ certifi14 }}</p>
       </div>
@@ -275,5 +302,6 @@
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
-    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-6/js/8-6.js"></script>  </body>
+
+    </body>
 </html>
