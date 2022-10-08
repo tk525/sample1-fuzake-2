@@ -1,10 +1,10 @@
 // エラーログ非表示
 // エラーにあったhtmlの<script>を削除したらアニメーションが動かないので
 // https://www.kaasan.info/archives/1610
-function TigilError() {
-	return true;
-}
-window.onerror = TigilError;
+// function TigilError() {
+// 	return true;
+// }
+// window.onerror = TigilError;
 
 
 // テキストランダム変換 https://coco-factory.jp/ugokuweb/move02/8-6/
@@ -34,11 +34,12 @@ function TypingAnime() {
 };
 
 // 画面が読み込まれたらすぐに動かしたい場合の記述
-$(window).on('load', function () {
+// $(window).on('load', function () {
+  window.addEventListener('DOMContentLoaded', function() {
   TypingInit(); //初期設定
   TypingAnime();/* アニメーション用の関数を呼ぶ*/
-});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
-
+// });
+})
 
 
 

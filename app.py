@@ -67,6 +67,10 @@ def hello():
     portf1="鬱対策アプリ"
     portf2="入力された悩みから、sklearnのアルゴリズムを使用し、段階的に解決方法を提案します。"
     portf3="「A」でログインして頂ければ、中身を確認できます。"
+    portf4="Click here"
+    portf5="ここをクリック"
+    portf6="Klicka här."
+    portf7="Cliquez ici."
 
 
     # 使用経験SW
@@ -126,7 +130,9 @@ def hello():
         News0=News0, News1=News1, News2=News2, News3=News3,
         News4=News4, News5=News5, News6=News6, News_img=News_img,
 
-        portf0=portf0, portf1=portf1, portf2=portf2, portf3=portf3, portf_img=portf_img,
+        portf0=portf0, portf1=portf1, portf2=portf2, portf3=portf3, portf4=portf4,
+        portf5=portf5, portf6=portf6, portf7=portf7,
+        portf_img=portf_img,
 
         SFex0=SFex0, SFex1=SFex1, SFex2=SFex2, SFex3=SFex3, SFex4=SFex4, SFex5=SFex5, SFex6=SFex6, SFex7=SFex7, SFex8=SFex8, SFex9=SFex9, SFex10=SFex10, SFex11=SFex11, SFex12=SFex12, SFex13=SFex13, SFex14=SFex14, SFex15=SFex15, SFex16=SFex16, SFex17=SFex17, SFex18=SFex18, SFex19=SFex19, SFex_img=SFex_img,
 
@@ -137,6 +143,15 @@ def hello():
         certifi14=certifi14, certifi_img=certifi_img,
         
         )
+
+@app.route('/more')
+def morehello():
+    css = "static/style.css"
+    js = "static/main.js"
+    return render_template('more.html',
+        css=css, js=js,
+        )
+
 
 if __name__ == "__main__":
     app.run(debug=True)

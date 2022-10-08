@@ -1,0 +1,283 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample1</title>
+
+    <link rel="stylesheet" href="https://github.com/tk525/sample1-fuzake-2/blob/29308d4fd6a82065963083561a5b7d5c2604b1bb/templates/assets/style.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ css }}">
+
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-1-2/css/9-1-2.css">
+
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-10/css/reset.css">
+
+  </head>
+  <body class="bgc-red txt_center_base">
+
+    <!-- <div class="txt_center_top bgc-gray txt blanks " >/ -->
+
+
+
+        <!-- 開発動機 -->
+        <section class="typeA bgc-gray txt_center_top">
+            <input id="TAB-A01" type="radio" name="TAB-A" checked="checked">
+            <label class="tabLabel" for="TAB-A01">
+
+                <div class="flex">
+                    <div class="bgextend bgUDextend">
+                      <span class="bgappear">
+
+                        <p>開発の動機</p>
+
+                      </span>
+                    </div>
+                </div>
+
+            </label>
+
+            <div class="content">
+              <div style="border: solid; height: 70vh; overflow-y: scroll; ">
+
+                <div class="flex">
+                  <div class="bgextend bgUDextend">
+                    <span class="bgappear">
+
+                        <p><a class="txt-BK txt text-left" >
+                            9月から12月初旬までPythonの機械学習の勉強を行いました。<br>
+                            その成果を残すために、前職で培った鬱の知識を活かせるものであれば作りやすいと思い開発しました。<br>
+                            機能に重視した為、デザインは必要最低限にしています。<br>
+                            無料と有料会員との差別化を行い、更に有料会員の状態により使用出来る機能の制限をかけています。<br>
+                            <br><br><br>
+                        </a></p>
+                        <div>
+                        <p class="text-left"><a class="txt-BK txt">
+                        【無料】<br>
+                        AIヒヤリング ミラーリング法でのヒヤリングのみ<br>
+                        <br>
+                        【連続ログイン数回で下記機能解除】※以下、括弧内は心のスコアとします<br>
+                        AIヒヤリング(0~80%) テキストから心をスコア化し、基礎値に追加。加えて、改善方法提案<br>
+                        性格診断(0%~) 心のスコアの基礎値決定<br>
+                        日記(0%) 今の気持ちを五段階評価とテキストで投稿。ポジティブな返答を行う<br>
+                        最終目的(50%) 75%で短期目標ヒヤリング<br>
+                        <br>
+                        【心のスコア80%~】<br>
+                        短期目的 最終目的でヒヤリングした短期目標をチェックリスト化<br>
+                        掲示板 テキスト投稿。加えて、ページ遷移なしでイイネ機能・攻撃的なポストにはペナルティ<br>
+                        カウンセラーとチャットの機能 カウンセラーとチャット。加えて、カウンセラー側でユーザーの心の状態や変化の状況をグラフ等で可視化<br>
+                        <br><br><br>
+                        </a></p>
+
+                        <p class="text-left"><a class="txt-BK txt">
+                            開発期間と内容<br><br>
+                            【12月初旬〜年末】簡易仕様書作成しました。気分が落ち込んだ時に使用する海外ユーザーが9割のアプリで、落ち込んでいる文を収集し学習データとして設定しました。次に、各機能ごとに適当なアルゴリズムを組み合わせました。落ち込んでいる状況改善の方法を、日本語と英語で調べた結果を正解として設定後、ユーザーの性格と現状を考慮した改善方法を、アルゴリズムで数値化し、適当な改善方法をいくつか提案するなど、ユーザーの状況によって改善方法の提案を変えるような機能をいくつか考案しました。<br><br>
+                            【1月〜2月末】考案した機能の開発に加え、ユーザーの状況を数値化し、その数値で使用できる機能にバリデーションを設定しました。また、セキュリティ対策として、エスケープ処置と、XSS対策で入力値制限・サニタイズ、SQLインジェクション対策でプリペアドステートメントを加えました。<br><br>
+                            【3月初旬】githubとHerokuにアップロードしました。<br>
+                        </a></p>
+
+                    </span>
+                  </div>
+                </div>
+
+                </div>
+              </div>
+            </div>
+            
+            <input id="TAB-A02" type="radio" name="TAB-A">
+            <label class="tabLabel" for="TAB-A02">
+                
+                <div class="flex">
+                    <div class="bgextend bgUDextend">
+                      <span class="bgappear">
+                        
+                        <p>簡易仕様書</p>
+
+                    </span>
+                  </div>
+              </div>
+
+            </label>
+            <div class="content">
+              <div class="text-left" style="border: solid; height: 70vh; overflow-y: scroll;">
+
+              <p class="text-left txt-BK txt">
+                  アルゴリズムは<a class="txt-BK" style="background-color: rgba(252, 97, 255, 0.3);">色付きマーカー</a>をつけます<br>
+                  何らかの原因により本実装不可で、仮実装をしているものは<a class="txt-BK" style="background-color: rgba(255, 215, 97, 0.3);">このマーカー</a>をつけます<br>
+                  既に出来上がった機能への追加機能は<a class="txt-BK" style="background-color: rgba(97, 255, 165, 0.3);">このマーカー</a>をつけます<br>
+                  <br>
+                  
+                  ・<急務>性格診断とか、データが1つで良いものはupdate必ず<br>
+                  ・sample/x2/x3の中身を、より細かく分類する必要があり(人を励ましてるのか、又は自分のことをただ言っているだけかなど)<br>
+                  ・sample/recommend_concreteの詳細を調べる必要があります<br>
+                  ・sample/calm_the_mind_pgとアンガーマネジメントも心のレベルで提案を変えてみた方がいいかもしれないです<br>
+                  DBはuser_id（ipアドレス）で紐付けします<br>
+                  <br><br>
+
+                  [Level1  初期は文字は最小限 -free]<br>
+                  ✅AIヒヤリング-beginner  入力されたテキストから、落ち込み度判定します<br>
+                  &ensp;&ensp;テキストデータの処理→落ち込み度スコア化→合計で一定条件満たしたら次のステップに移行した方がいいかもしれません？<br>
+                  &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(255, 215, 97, 0.3);">落ち込み度スコアは<s>0に近い状態の性格を考慮した上で判定します。</s>ラインは80/100です</a><br>
+                  &ensp;&ensp;postgreで、IDはIPアドレスで作成。L2までIDを引継ぎします<br>
+                  &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(252, 97, 255, 0.3);">重要な単語のオウム返しと、気持ちを上げる提案をします knn</a><br>
+                  &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(255, 215, 97, 0.3);">Knnにしたけど、ナイーブの方が適切かもしれないので再度検討する必要が有ります。それに加え、LInearSVCを実装します</a>
+                    <br>
+                    &ensp;&ensp;&ensp;&ensp;スキーム  理解・共感→感想→提案<br>
+                    &ensp;&ensp;&ensp;&ensp;理解・共感」new_testerの重さを可視化して、<s>線形で分断し、</s>低い値のものを使用。<s>頻出度をL1、線形で線を引くと良いかもしれません</s><br>
+                    &ensp;&ensp;&ensp;&ensp;<a class="txt-BK" style="background-color: rgba(255, 215, 97, 0.3);">「感想」一番低い特徴量を選択、適当な文章を作成します。参考文書はsampleから使用希望します</a><br>
+                    &ensp;&ensp;&ensp;&ensp;本実装では、自然言語処理の知識が必要です。<br>
+                    &ensp;&ensp;&ensp;&ensp;<a class="txt-BK" style="background-color: rgba(252, 97, 255, 0.3);">仮実装は同じ文字数で返すミラーリング法を使う。K近傍で、新規データの文字数を新規データポイントとし、<s>encouraging.xlsxの文字数たち→</s>sample/enco_list.xlsx(Xを文字数、Yを配列番号と仮説)と照合した方がいいかもしれません</a><br>
+                  <br>
+                  ✅継続してappを使えているか、ログインボーナスを付与して確認します<br>
+                  &ensp;&ensp;サイトを開いただけでも、大きな一歩とカウントしたいので別にDBを設置します<br>
+                  &ensp;&ensp;ログインボーナスで3つで有料機能1つ解除します<br>
+                  &ensp;&ensp;サイトを開いた時点でIPアドレス・タイムスタンプで仮DBを作った方がいいかもしれません<br>
+                  <br><br>
+                  [Level2  ある程度元気な状態になったら他の機能紹介 -free] [0~80%]<br>
+                  &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(97, 255, 165, 0.3);">l1_userにテキスト内容も挿入できるように変更します</a><br>
+                    &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(97, 255, 165, 0.3);">l2_aiにAIヒヤリングのトータルスコアを引き継ぎできるように、personal_scoreでclass化します</a><br>
+                    &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(97, 255, 165, 0.3);">l1_loginにすでにログインしていたら、DB挿入を無視するように追記します</a><br>
+                  ✅<a class="txt-BK" style="background-color: rgba(252, 97, 255, 0.3);">性格診断 LinearSVC・knn</a><br>
+                  &ensp;&ensp;鬱になりやすい性格を集めて、<s>ランダムフォレスト？</s>→knnになりました<br>
+                  &ensp;&ensp;DBに挿入します(ip、診断結果(0と1の)、性格スコア)<br>
+                  &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(255, 215, 97, 0.3);">0~30/30~70/70~100と事前に分割下が、それを#凝集型クラスタリングで調整するのがいいかもしれません</a><br>
+                  
+                  ✅AIヒヤリング-standard  入力されたテキストから、落ち込み度判定・具体的な解決方法提案します<br>
+                  &ensp;&ensp;テキストデータの処理→落ち込み度スコア化→一定条件満たしたら次のステップに案内します？80%<br>
+                  &ensp;&ensp;落ち込み度スコアは性格両診断を考慮した上で判定します。<s>数値急上昇させずに、分散させます</s><br>
+                  &ensp;&ensp;提案<s>1stはなし、2ndからは</s><a class="txt-BK" style="background-color: rgba(252, 97, 255, 0.3);">アルゴリズム予想で提案リストを参照し、提案します</a><br>
+                  &ensp;&ensp;性格診断でオススメ対処法を全て参照、ポストを診断で落ち込みが低ければ全て/多ければ削る方法<s>で、その選択肢をいくつの中でランダムに１つ選択し、それ提案とします。</s><br>
+                  &ensp;&ensp;性格診断  ベースデータを<s>#凝集型クラスタリング→</s>PCA、<s>線形他クラス or knn</s>DBSCAN?  診断による結果から、提案(sample/recommend_concrete)を探します。<br>
+                  &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(255, 215, 97, 0.3);">性格と投稿からベストな方法が見つからないので削るタイプしかできなかった。もっと良い案があるはずです</a><br>
+                  <br>
+                  ✅日記/メンタルヘルス 記録-beginner  数値記録のみポジティブなコメントがつく(強制するような提案はしません<br>
+                  &ensp;&ensp;「数値」  自分で今の気持ちを記録するようにします。５段階評価です<br>
+                  &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(252, 97, 255, 0.3);">ポジティブなマインドになるコメントを付けます。</a><br>
+                  &ensp;&ensp;未来予想>過去予測だったら、great!未来< 過去good!の優良可の判定方法を実装します<br>
+                  &ensp;&ensp;<s>PCA  長さ/濃さバラバラの５段階サンプルを作成した方がいいかもしれません</s><br>
+                  &ensp;&ensp;Linear regression(線形回帰)  特徴量と配列番号を使って回帰するなら、配列番号をX、Yに特徴量を入れます。predictでXつまり配列番号を指定し、Yの値を予測させるのがベストかもしれません<br>
+                  &ensp;&ensp;「日記」  <s>画像投稿可能、ただし１枚です。</s>文字数250に設定します<br>
+                  <br>
+                  ✅最終目標とその目標への段階的な目標を作ります  継続app使用から、実世界での継続に切り替えます<br>
+                  &ensp;&ensp;AIヒヤリング聞きが50%あたりで質問する→75%で具体的に何をすれば良いかを自分で考えるように実装します<br>
+                  &ensp;&ensp;例)旅行、諦めていた目標に取り組む、より良い人間関係を築く、自身を改善します<br>
+                  <br>
+                  ・<a class="txt-BK" style="background-color: rgba(252, 97, 255, 0.3);"><s>鬱対策</a>  テキスト参照してください</s><br>
+                  <br><br>
+
+                  [Level3  さらに元気になったら提案 -lease $1~/month] [80%~100%]<br>
+                  &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(97, 255, 165, 0.3);">l1_userに汚い単語を使った回数を入れれるようにカラム追加します</a><br>
+                    &ensp;&ensp;<a class="txt-BK" style="background-color: rgba(97, 255, 165, 0.3);">l1_aiのDB挿入時に汚い単語を使った回数を引き継げるようにDB編集します</a><br>
+                  <br>
+                  ✅前提  ユーザー登録機能  ラスト<br>
+                  <br>
+                  &ensp;&ensp;もしl3ユーザーであればl3の機能を通過させるようにします<br>
+                  &ensp;&ensp;l1で仮作成したDB(l1_user / l1_login)をまとめて、本DB(l2_user)に移行します。守るポイントを１つに絞るため。絶対に守らないといけないやつを絞ります。加えて、暗号化も実装します<br>
+                  &ensp;&ensp;追加 ユーザー名、生年月日、メールアドレス、電話番号、クレジットカード<br>
+                  &ensp;&ensp;追加 日記/メンタルヘルス、心理カウンセラーからのメモとIPアドレス<br>
+                  <br>
+                  ✅日記/メンタルヘルス 記録-standard  flask連携後、再度確認<br>
+                  &ensp;&ensp;参考  https://qiita.com/keimoriyama/items/7c935c91e95d857714fb<br>
+                  &ensp;&ensp;ユーザー機能と紐付け<br>
+                  &ensp;&ensp;画像投稿可能、無制限。<br>
+                  <br>
+                  ✅短期目標  <a class="txt-BK" style="background-color: rgba(252, 97, 255, 0.3);">短期目標</a>を作って小さい成功を積み重ねます</a><br>
+                  &ensp;&ensp;ユーザー機能と紐付けします<br>
+                  &ensp;&ensp;L2で作った目標を使います<br>
+                  &ensp;&ensp;①協調フィルタリング  同じ性格・同じ目標を持ってる人のデータを選びます<br>
+                  &ensp;&ensp;2-6-2の法則で、上位80%以上を「同じ」と定義します<br>
+                  &ensp;&ensp;協調フィルタリングのアルゴリズムはなく、理論のみっぽいのでコレを参考にしますhttps://qiita.com/hik0107/items/96c483afd6fb2f077985<br>
+                  &ensp;&ensp;LDA  同じ目標に適応し、同じ単語(タスク内)所持率を計算します<br>
+                  &ensp;&ensp;②LDA  数値が上昇した日までの、掲示板でのアクション/ポスト・AIヒヤリング・日記単語抜き出します<br>
+                  &ensp;&ensp;③LSTM(RNN)  単語を突っ込んで、文章を作らせる(提案)。自作してAIヒヤリングにも適用します<br>
+                  &ensp;&ensp;<s>タスクを作成→1st done、1st done→2nd...のクリアまでの要した日数に加え、その人のapp内の全ての「行動・興味・ポスト」を照らし合わせて、対象問題解決に最善の方法を見つけます<br>
+                  &ensp;&ensp;最初は目標作成→タスク作成までの日数<br>
+                  &ensp;&ensp;タスク作成 2021.1.1→1st done 2021.1.31=28日(2~30日)+1=30日<br>
+                  &ensp;&ensp;x日内で「行動・興味・ポスト」掲示板でのアクション/ポスト・過去のAIヒヤリング・数値が上昇した日の日記を全て取得→意味のある単語のみ抜き出し→deeplearningで合成したいです!</s><br>
+                  <br>
+                  ✅掲示板<br>
+                  &ensp;&ensp;ユーザー機能と紐付けします<br>
+                  &ensp;&ensp;コメント不可・いいねファボのみ、攻撃的な文はNGです<br>
+                  &ensp;&ensp;攻撃的なポストをした場合  投稿機能自体はさせますが、表示はさせずに、ユーザーの平均スコア-5%を下げます。加えて、DBに記録として挿入します（新しいscore、ポストの内容）<br>
+                  &ensp;&ensp;<s>50%切ったら</s>悪い単語を3回使ったら3日停止、アンガーマネジメントプログラムを実行させます<br>
+                  &ensp;&ensp;アンガーマネジメントプログラム  心を落ち着かせる方法をexcelに記載しランダムに抽出します。もしかしたらアルゴリズムで関連づけることができるかもしません<br>
+                  <br>
+                  ✅会話  with 心理カウンセラー  <br>
+                  &ensp;&ensp;ユーザー機能と紐付けします<br>
+                  &ensp;&ensp;会話のログは取らない。メンターに話した内容を記載させます（DB:Psych Counselor's Notes）<br>
+                  &ensp;&ensp;通信関連(websocket)はflask立ち上げ後に確認します。スマホとPCで確認します<br>
+                  &ensp;&ensp;２人以上の入室禁止です。同じチャットルームに２人が入れるか、つまり互換性を持たせます。<br>
+                  &ensp;&ensp;チャット形式  文字起こし、メンターは緑/患者は白で実装します<br>
+                  &ensp;&ensp;メンターにユーザーの情報開示できるようにします<br>
+                  &ensp;&ensp;l1_user  text/created_on、l2_personality  record、l2_endg  end_goal/end_goals_tasks、<br>
+                  &ensp;&ensp;l3_bullentin_boadrd_text  bbs_txt_text、l3_bullentin_board_act  bbs_act<br>
+                  <br><br>
+                  
+                  
+                  [追加機能]<br>
+                  ✅twmc<br>
+                  &ensp;&ensp;ユーザーがchatを起動したら、管理ページに部屋が表示されるようにします<br>
+                  &ensp;&ensp;対応中か否かを表示します<br>
+                  &ensp;&ensp;ユーザーの情報の見やすさ改善します<br>
+                  &ensp;&ensp;・ajaxを実装、画像クリックしたら拡大、ページネーション、新規登録の部分変更します<br>
+                  &ensp;&ensp;・チェックボックスでブラウザ終了時にDBに保存した方がいいかもしれません<br>
+                  &ensp;&ensp;・サンプルをDBに入れてください<br>
+                  &ensp;&ensp;・DBのバックアップ方法調べます<br>
+                  <br>
+                  &ensp;&ensp;・電話  https://qiita.com/mobilebiz/items/5a39aef62d0ad9070d02<br>
+                  &ensp;&ensp;・パラメータ自動エスケープ  https://qiita.com/yoichi22/items/56cc3d8e243e137a254c<br>
+                  <br>
+                  &ensp;&ensp;✅Flask(python)/Foundation(html)<br>
+                  &ensp;&ensp;✅タスクバーのようなメインメニューみたいなのが必要かもしれません。<br>
+                  &ensp;&ensp;✅できる限りの全てにajaxを実装します<br>
+                  &ensp;&ensp;・AI文字自動作成<br>
+                  <br><br>
+                  
+                  
+                  [TO DO]<br>
+                  &ensp;&ensp;セキュリティー対策<br>
+                  &ensp;&ensp;✅エスケープ処理<br>
+                  &ensp;&ensp;&ensp;&ensp;コード等を文字化けさせた、直前で変換させました<br>
+                  &ensp;&ensp;&ensp;&ensp;直前よりも前に何度か処理する必要があるかもしれません<br>
+                  &ensp;&ensp;・XSS<br>
+                  &ensp;&ensp;✅バリデーション  入力値制限<br>
+                  &ensp;&ensp;&ensp;&ensp;→flask-wtfというライブラリで対応しました<br>
+                  &ensp;&ensp;✅サニタイズ  全ての記号を無意味な文字に変換します。<br>
+                  &ensp;&ensp;&ensp;&ensp;コードを埋め込まれる可能性を無くしました<br>
+                  &ensp;&ensp;&ensp;&ensp;→bleachというライブラリがあるのでそれを使用<br>
+                  &ensp;&ensp;・SQLインジェクション<br>
+                  &ensp;&ensp;✅プリペアドステートメント（プレースホルダ？）想定外のSQL実行文をさせないようにしました<br>
+                  &ensp;&ensp;&ensp;&ensp;DBの実行コードでwhere=で使うクォーテーションをなくすとエスケープしました<br>
+                  &ensp;&ensp;<s>→ipのようにxx.xx.x.xのような点を複数含む場合はSQLが実行できないので不可です</s><br>
+                  &ensp;&ensp;&ensp;&ensp;でしたが、sql実行文と値で別々にすればクォーテーション外せたので実装できました<br>
+                  <br><br>
+                  ・セキュリティ参考<br>
+                  &ensp;&ensp;SQLインジェンクション対策  https://html-coding.co.jp/knowhow/security/sql/  <br>
+                  &ensp;&ensp;位置情報取得  https://teratail.com/questions/214826<br>
+                  <br>
+                  
+                  ・メンタルヘルス DB<br>
+                  ・鬱  人の行動レベル  <br>
+                  &ensp;&ensp;https://www.beyondblue.org.au/the-facts/anxiety-and-depression-checklist-k10<br>
+                  &ensp;&ensp;https://utsu.ne.jp/depression/correlation/life/<br>
+                  &ensp;&ensp;具体的な解決方法提案します<br>
+                  ・悩み・AIヒヤリング  SNSから取得？連携？<br>
+                  &ensp;&ensp;済単語リスト  鬱  https://myvocabulary.com/word-list/depression-vocabulary/<br>
+                  &ensp;&ensp;単語リスト  ネガ感情  https://myvocabulary.com/word-list/emotions-feelings-mood-vocabulary/<br>
+                  &ensp;&ensp;単語リスト  いじめ  https://myvocabulary.com/word-list/bullying-and-gangs-vocabulary/<br>
+                  &ensp;&ensp;AIヒヤリングの入力されたテキストから落ち込み度判定<br>
+                  &ensp;&ensp;ツイートタイムライン Talklifeから抜粋 50件<br>
+                  ・対象の性格(デフォのキャパシティを判断)<br>
+                  &ensp;&ensp;まじめで・責任感が強く・完ぺき主義で・人からの評価も高く・道徳観も強い人<br>
+                  &ensp;&ensp;https://www.verywellmind.com/personality-trait-versus-mood-state-1067551#:~:text=Specific%20traits%20that%20are%20linked,is%20(or%20isn't)<br>
+                  <br><br>
+              </a></p>
+
+              </div>
+            </div>
+        </section>
+
+    </div>
+
+  </body>
+</html>
