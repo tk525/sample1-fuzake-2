@@ -9,6 +9,7 @@ app = Flask(__name__, static_folder='./templates/static')
 @app.route('/')
 def hello():
     css = "static/style.css"
+    reset_css = "static/reset.css"
     js = "static/main.js"
 
     # 導入
@@ -116,7 +117,7 @@ def hello():
     certifi14="2010年9月 全商 情報処理検定 ３級"
 
     return render_template('index.html',
-        css=css, js=js,
+        css=css,reset_css=reset_css , js=js,
 
         post0=post0, post1=post1, post_img=post_img,
 
@@ -147,9 +148,10 @@ def hello():
 @app.route('/more')
 def morehello():
     css = "static/style.css"
+    reset_css = "static/reset.css"
     js = "static/main.js"
     return render_template('more.html',
-        css=css, js=js,
+        css=css ,reset_css=reset_css , js=js,
         )
 
 
