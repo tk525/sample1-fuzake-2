@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://github.com/tk525/sample1-fuzake-2/blob/29308d4fd6a82065963083561a5b7d5c2604b1bb/templates/assets/style.css">
     <link rel= "stylesheet" type= "text/css" href= "{{ css }}">
 
+    <!-- cocofactry overload対策 -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ reset_css }}"> 
+
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-1-2/css/9-1-2.css">
-
-    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-10/css/reset.css">
 
   </head>
   <body class="bgc-red txt_center_base">
@@ -278,6 +279,12 @@
         </section>
 
     </div>
+
+    <script src="{{ js }}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
 
   </body>
 </html>

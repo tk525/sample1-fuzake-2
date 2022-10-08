@@ -31,15 +31,18 @@ function TypingAnime() {
       $(this).removeClass("endAnime"); //範囲外にスクロールした場合はendAnimeのクラスを削除
     }
   });
-};
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+  TypingAnime();/* アニメーション用の関数を呼ぶ*/
+});// ここまで画面をスクロールをしたら動かしたい場合の記述
 
 // 画面が読み込まれたらすぐに動かしたい場合の記述
-// $(window).on('load', function () {
-  window.addEventListener('DOMContentLoaded', function() {
+$(window).on('load', function () {
   TypingInit(); //初期設定
   TypingAnime();/* アニメーション用の関数を呼ぶ*/
-// });
-})
+});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 
 
