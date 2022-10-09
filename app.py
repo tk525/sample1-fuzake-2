@@ -82,7 +82,7 @@ def hello():
     SFex2="Python"
     SFex3="Flask flask-paginate Flask-SocketIO Flask-WTF Django scikit-learn numpy pandas slack-bolt selenium openpyxlなど"
     SFex4="HTMLとCSS JS、PHP データベース"
-    SFex5="Laravel / ajax Foundation Bootstrap / MySQL PostgreSQL Heroku など"
+    SFex5="Laravel / ajax Foundation Bootstrap / MySQL PostgreSQL SQLite Heroku など"
     SFex6="英語"
     SFex7="2019年10月〜2020年1月 英語が全くできない状態で、フィリピンにある海外留学に留学。語彙力・発音・リスニングに注力。"
     SFex8="2020年2月〜2021年3月 更なる英語力をつけるため、ECCにてネイティブとのスピーキング・リスニング・ライティング・リーディングを週3通学。"
