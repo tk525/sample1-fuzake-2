@@ -24,7 +24,8 @@ def hello():
     aboutMe3="その期間中、四六時中コードを考えている癖や、「自身の知識を増やししつつ、未知のエラーや実装経験がない機能で更に何かを作りたい」と強い思いから、最終ジョブチェンジを決意しました。"
     aboutMe4="帰還後、独学でPythonの自然言語処理と英語、WEBサイトから取得したファイルをエクセルで加工してWEBサイトにアップロードするまでを全てPythonで開発したりと、現在も学習及び開発を行っています。"
     aboutMe5="2021年6月からセーブポイントを東京に変更と同時に、IT企業に入社し、7月から案件に出征中です。"
-    aboutMe6="尚、前の職場の先輩から「自由にさせると本領発揮するタイプ」と評価されました"
+    aboutMe6="尚、以前までの職場の先輩方から「自由にさせると本領発揮するタイプ」と評価されていました。"
+    aboutMe7="前職では、気難しい性格で誰にも心を開かない精神疾患の方に「料理をすると、高確率で失敗するので助けて下さい」と真面目に相談したところ、なぜか仲良くなりました。特に制限がない今の現場でも、キッティング時にバッチが上手く実行されないので、ファイルの中身書き換えを行なったり、ソフトウェアのバグ改善の為に、レジストリの変更を行なったりしました。"
 
 
     # 好きと嫌い
@@ -59,7 +60,7 @@ def hello():
     News3="昨今、「AIが仕事を奪う」といわれていますが、仕事があまりない田舎町から更に仕事を奪った後、人々はどのような反応や行動を起こすのか興味があります。"
     News4="また、2018年にAmazon Goというレジ・販売員がいない店舗の導入をアメリカのシアトルで開始しましたが、そのAmazonの技術レベルの高さに興味があります。"
     News5="しかし、ハッキングを行う団体に狙われた際、セキュリティホールが人工的に作られる事の防止や、クラッキングを行われた際の対策や修復などを、どのようにしているのか興味があります。"
-    News6="最近あったことは、"
+    News6="最近あったことは、柔軟剤がすごく匂いがして電車や暇な時などに香ってキメられる事です。前の柔軟剤は適量の3倍ほど入れてみても全く香らず、洗剤を買ったのではないかと思ってしまうほど匂いが全くしませんでした。一人暮らしを始めたら絶対使おうと思っていた柔軟剤が適量を入れるとすごく香るので、いつでもどこでも香るのでキメる事が出来て幸せです。生きててよかったです。長生きします。"
 
 
     # ポートフォリオ
@@ -122,7 +123,8 @@ def hello():
         post0=post0, post1=post1, post_img=post_img,
 
         aboutMe0=aboutMe0, aboutMe1=aboutMe1, aboutMe2=aboutMe2, 
-        aboutMe3=aboutMe3, aboutMe4=aboutMe4, aboutMe5=aboutMe5, aboutMe6=aboutMe6,
+        aboutMe3=aboutMe3, aboutMe4=aboutMe4, aboutMe5=aboutMe5, aboutMe6=aboutMe6, aboutMe7=aboutMe7,
+
         LikeHate0=LikeHate0, LikeHate1=LikeHate1, LikeHate2=LikeHate2, LikeHate3=LikeHate3, LikeHate4=LikeHate4, LikeHate5=LikeHate5, LikeHate6=LikeHate6, LikeHate7=LikeHate7, LikeHate8=LikeHate8, LikeHate_img=LikeHate_img, 
 
         FreeTime0=FreeTime0, FreeTime1=FreeTime1, FreeTime2=FreeTime2, FreeTime3=FreeTime3,
